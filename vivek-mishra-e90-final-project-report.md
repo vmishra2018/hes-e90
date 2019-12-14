@@ -188,11 +188,11 @@ Below is the complete json of the skill.
 
 I tried testing the skills using my echo device as well as through the test interface from developer console on amazon site
 
-![image-20191214025717814](/HES/CSCI-E-90/final-project/alexa-test-1.png)
+![image-20191214025717814](/alexa-test-1.png)
 
 You can see the images being stored in the directory as well.
 
-![image-20191214030000114](/HES/CSCI-E-90/final-project/alexa-test2.png)
+![image-20191214030000114](/alexa-test2.png)
 
 
 
@@ -200,7 +200,7 @@ You can see the images being stored in the directory as well.
 
 
 
-![image-20191214030210467](/HES/CSCI-E-90/final-project/alexa-test3.png)
+![image-20191214030210467](/alexa-test3.png)
 
 
 
