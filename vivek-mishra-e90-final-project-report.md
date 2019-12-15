@@ -6,21 +6,23 @@ Author: [Vivek Mishra](blpvivek@gmail.com)
 
 [Project Statement](#project-statement)
 
+[Git Location](#git-location)
+
+[Youtube links](#youtube-links)
+
 [Hardware Needed](#hardware-needed)
 
 [Software Installations](#software-installations)
-
-[Git Location](#git-location)
 
 [Setup](#setup)
 
 [Conclusion](#conclusion)
 
+[Next Steps](#next-steps)
+
 [References](#references)
 
 #### Project statement 
-
-
 
 Through this project I wanted to get some hands on experience with building  alexa skills and integrating them different devices (in this case raspberry pi and pi camera)
 
@@ -28,6 +30,16 @@ In this project I have built two skills
 
 <li> Alexa Skill to turn the lights on and off.
 <li> Alexa Skill to take a picture.
+
+#### Git Location
+
+https://github.com/vmishra2018/hes-e90
+
+#### Youtube links
+
+##### Project Summary https://youtu.be/G5Fb_8MANfM
+
+##### Full Project Video https://youtu.be/boMzSNKP7Hk
 
 
 
@@ -50,10 +62,6 @@ In this project I have built two skills
 <li> Flask-ask  -- flask api to interact with alexa skills
 <li> Ngrok -- making your local flask apis accessing thru a secured channel (giving a public url so alexa can call them)
 
-#### Git Location
-
-https://github.com/vmishra2018/hes-e90
-
 
 
 #### Setup
@@ -70,7 +78,7 @@ Pi Setup is very standard, I followed the below steps
 
 `sudo apt-get install flask-ask `
 
-<li> install ngrok on raspberry pi from https://ngrok.com/
+<li> install ngrok on raspberry pi from https://ngrok.com/ . Keep in mind that with ngrok free version you don't get a static url, everytime you restart you get a different url. you need to update that endpoint in alexa skill with that url.
 
 ##### Pi Camera  Setup
 
@@ -188,11 +196,11 @@ Below is the complete json of the skill.
 
 I tried testing the skills using my echo device as well as through the test interface from developer console on amazon site
 
-![image-20191214025717814](/alexa-test-1.png)
+![image-20191214025717814](/images/alexa-test-1.png)
 
 You can see the images being stored in the directory as well.
 
-![image-20191214030000114](/alexa-test2.png)
+![image-20191214030000114](/images/alexa-test2.png)
 
 
 
@@ -200,7 +208,7 @@ You can see the images being stored in the directory as well.
 
 
 
-![image-20191214030210467](/alexa-test3.png)
+![image-20191214030210467](/images/alexa-test3.png)
 
 
 
@@ -210,13 +218,21 @@ You can see the images being stored in the directory as well.
 
 #### Conclusion
 
-I know I am just scratching the surface here. but i have learnt a lot about alexa skills and how we can integrate them with different devices. I am hoping to build on this and make a voice remote and a magic mirror.
+I know I am just scratching the surface here. but i have learnt a lot about alexa skills and how we can integrate them with different devices.
 
+#### Next Steps
 
+- [ ] integrate s3 to store the images captured.
+- [ ] build a voice remote skill with pi.
+- [ ] Build a magic mirror to take a picture
 
 #### References
 
 https://www.hackster.io/user00317224/control-raspberry-pi-gpio-using-amazon-echo-ngrok-de41d1#toc-step-1--setup-0
 
 https://www.youtube.com/watch?v=eObSqbe9aqU
+
+https://youtu.be/qk1IVs5B1GI
+
+
 
